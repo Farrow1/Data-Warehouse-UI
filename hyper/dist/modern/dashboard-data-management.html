@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Summit Credit Union | Data Management Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- App css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/app-modern.min.css" rel="stylesheet" type="text/css" id="light-style" />
+        <link href="assets/css/app-modern-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
+
+    </head>
+
+    <body class="loading" data-layout="detached" data-layout-config='{"leftSidebarCondensed":false,"darkMode":false, "showRightSidebarOnStart": true}'>
+
+        <!-- Topbar Start -->
+        <div class="navbar-custom topnav-navbar topnav-navbar-dark">
+            <div class="container-fluid">
+
+                <!-- LOGO -->
+                <a href="index.html" class="topnav-logo">
+                    <span class="topnav-logo-lg">
+                        <img src="assets/images/summit-logo.jpg" alt="" height="35">
+                    </span>
+                    <span class="topnav-logo-sm">
+                        <img src="assets/images/summit-logo.jpg" alt="" height="35">
+                    </span>
+                </a>
+
+                <ul class="list-unstyled topbar-right-menu float-right mb-0">
+
+                    <li class="dropdown notification-list">
+                        <a class="nav-link right-bar-toggle" href="javascript: void(0);">
+                            <i class="dripicons-gear noti-icon"></i>
+                        </a>
+                    </li>
+                    <li class="dropdown notification-list topbar-dropdown d-none d-lg-block">
+                        <a class="nav-link dropdown-toggle arrow-none" data-toggle="dropdown" id="topbar-languagedrop" href="#"
+                            role="button" aria-haspopup="true" aria-expanded="false">
+                            <img src="assets/images/flags/us.jpg" alt="user-image" class="mr-1" height="12"> <span
+                                class="align-middle">English</span> <i class="mdi mdi-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated topbar-dropdown-menu"
+                            aria-labelledby="topbar-languagedrop">
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <img src="assets/images/flags/germany.jpg" alt="user-image" class="mr-1" height="12"> <span
+                                    class="align-middle">German</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <img src="assets/images/flags/italy.jpg" alt="user-image" class="mr-1" height="12"> <span
+                                    class="align-middle">Italian</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <img src="assets/images/flags/spain.jpg" alt="user-image" class="mr-1" height="12"> <span
+                                    class="align-middle">Spanish</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <img src="assets/images/flags/russia.jpg" alt="user-image" class="mr-1" height="12"> <span
+                                    class="align-middle">Russian</span>
+                            </a>
+
+                        </div>
+                    </li>
+
+                    <li class="dropdown notification-list">
+                        <a class="nav-link dropdown-toggle arrow-none" data-toggle="dropdown" href="#" id="topbar-notifydrop"
+                            role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="dripicons-bell noti-icon"></i>
+                            <span class="noti-icon-badge"></span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated dropdown-lg"
+                            aria-labelledby="topbar-notifydrop">
+
+                            <!-- item-->
+                            <div class="dropdown-item noti-title">
+                                <h5 class="m-0">
+                                    <span class="float-right">
+                                        <a href="javascript: void(0);" class="text-dark">
+                                            <small>Clear All</small>
+                                        </a>
+                                    </span>Notification
+                                </h5>
+                            </div>
+
+                            <!-- All-->
+                            <a href="javascript:void(0);" class="dropdown-item text-center text-primary notify-item notify-all">
+                                View All
+                            </a>
+
+                        </div>
+                    </li>
+            
+                    <li class="dropdown notification-list">
+                        <a class="nav-link dropdown-toggle nav-user arrow-none mr-0" data-toggle="dropdown" id="topbar-userdrop"
+                            href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="account-user-avatar">
+                                <img src="assets/images/users/avatar-1.jpg" alt="user-image" class="rounded-circle">
+                            </span>
+                            <span>
+                                <span class="account-user-name">Dwight Schrute</span>
+                                <span class="account-position">Account Manager</span>
+                            </span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated topbar-dropdown-menu profile-dropdown"
+                            aria-labelledby="topbar-userdrop">
+                            <!-- item-->
+                            <div class=" dropdown-header noti-title">
+                                <h6 class="text-overflow m-0">Welcome!</h6>
+                            </div>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i class="mdi mdi-account-circle mr-1"></i>
+                                <span>My Account</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i class="mdi mdi-account-edit mr-1"></i>
+                                <span>Settings</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i class="mdi mdi-lifebuoy mr-1"></i>
+                                <span>Support</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="pages-lock-screen-2.html" class="dropdown-item notify-item">
+                                <i class="mdi mdi-lock-outline mr-1"></i>
+                                <span>Lock Screen</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i class="mdi mdi-logout mr-1"></i>
+                                <span>Logout</span>
+                            </a>
+
+                        </div>
+                    </li>
+
+                </ul>
+                <a class="button-menu-mobile disable-btn">
+                    <div class="lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+               <!-- ****************************************************************************SEARCH FUNCTION, USELESS FOR US***********************
+                <div class="app-search">
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search...">
+                            <span class="mdi mdi-magnify"></span>
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="submit">Search</button>
+                            </div>
+                        </div>
+                    </form>
+                </div> -->
+            </div>
+        </div>
+        <!-- end Topbar -->
+        
+        <!-- Start Content-->
+        <div class="container-fluid">
+
+            <!-- Begin page -->
+            <div class="wrapper">
+
+                <!-- ========== Left Sidebar Start ========== -->
+                <div class="left-side-menu left-side-menu-detached">
+
+                    <div class="leftbar-user">
+                        <a href="javascript: void(0);">
+                            <img src="assets/images/users/avatar-1.jpg" alt="user-image" height="42" class="rounded-circle shadow-sm">
+                            <span class="leftbar-user-name">Dwight Schrute</span>
+                        </a>
+                    </div>
+
+                    <!--- Sidemenu -->
+                    <ul class="metismenu side-nav">
+
+                        <li class="side-nav-title side-nav-item">Navigation</li>
+
+                        <li class="side-nav-item">
+                            <a href="javascript: void(0);" class="side-nav-link">
+                                <i class="uil-home-alt"></i>
+                                <span class="badge badge-info badge-pill float-right">1</span>
+                                <span> Dashboards </span>
+                            </a>
+                            <ul class="side-nav-second-level" aria-expanded="false">
+                                <li>
+                                    <a href="dashboard-data-management.html">Data Management</a>
+                                </li>
+                            </ul>
+                        </li>
+                    <!-- End Sidebar -->
+
+                    <div class="clearfix"></div>
+                    <!-- Sidebar -left -->
+
+                </div>
+                <!-- Left Sidebar End -->
+
+                <div class="content-page">
+                    <div class="content">
+                        
+                        <!-- start page title -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box">
+                                    <div class="page-title-right">
+                                        <ol class="breadcrumb m-0">
+                                            <li class="breadcrumb-item"><a href="index.html">Summit</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
+                                            <li class="breadcrumb-item active">Data Management</li>
+                                        </ol>
+                                    </div>
+                                    <h4 class="page-title">Data Management</h4>
+                                    <strong>TODO:</strong>
+                                        <ul><li>Add Dropdown elements for searching/filtering</li>
+                                        <li>Add CRUD functions?</li>
+                                        <li>Brainstorm other dashboard(s)</li>
+                                        <li>Patch connection to API</li></ul>
+                                </div>
+                            </div>
+                        </div>     
+                        <!-- end page title --> 
+                        
+                    </div> <!-- End Content -->
+
+                    <!-- Footer Start -->
+                    <footer class="footer">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    2020 © Summit Credit Union
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="text-md-right footer-links d-none d-md-block">
+                                        <a href="javascript: void(0);">Support</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                    <!-- end Footer -->
+
+                </div> <!-- content-page -->
+
+            </div> <!-- end wrapper-->
+        </div>
+        <!-- END Container -->
+
+
+        <!-- Right Sidebar -->
+        <div class="right-bar">
+
+            <div class="rightbar-title">
+                <a href="javascript:void(0);" class="right-bar-toggle float-right">
+                    <i class="dripicons-cross noti-icon"></i>
+                </a>
+                <h5 class="m-0">Settings</h5>
+            </div>
+
+            <div class="rightbar-content h-100" data-simplebar>
+
+                <div class="p-3">
+                    <div class="alert alert-warning" role="alert">
+                        <strong>Customize </strong> the overall color scheme, sidebar menu, etc.
+                    </div>
+
+                    <!-- Settings -->
+                    <h5 class="mt-3">Color Scheme</h5>
+                    <hr class="mt-1" />
+
+                    <div class="custom-control custom-switch mb-1">
+                        <input type="radio" class="custom-control-input" name="color-scheme-mode" value="light"
+                            id="light-mode-check" checked />
+                        <label class="custom-control-label" for="light-mode-check">Light Mode</label>
+                    </div>
+
+                    <div class="custom-control custom-switch mb-1">
+                        <input type="radio" class="custom-control-input" name="color-scheme-mode" value="dark"
+                            id="dark-mode-check" />
+                        <label class="custom-control-label" for="dark-mode-check">Dark Mode</label>
+                    </div>
+
+                    <!-- Left Sidebar-->
+                    <h5 class="mt-4">Left Sidebar</h5>
+                    <hr class="mt-1" />
+
+                    <div class="custom-control custom-switch mb-1">
+                        <input type="radio" class="custom-control-input" name="compact" value="fixed" id="fixed-check"
+                            checked />
+                        <label class="custom-control-label" for="fixed-check">Scrollable</label>
+                    </div>
+
+                    <div class="custom-control custom-switch mb-1">
+                        <input type="radio" class="custom-control-input" name="compact" value="condensed"
+                            id="condensed-check" />
+                        <label class="custom-control-label" for="condensed-check">Condensed</label>
+                    </div>
+
+                    <button class="btn btn-primary btn-block mt-4" id="resetBtn">Reset to Default</button>
+
+                    <a href="https://themes.getbootstrap.com/product/hyper-responsive-admin-dashboard-template/"
+                        class="btn btn-danger btn-block mt-3" target="_blank"><i class="mdi mdi-basket mr-1"></i> Purchase
+                        Now</a>
+                </div> <!-- end padding-->
+
+            </div>
+        </div>
+
+        <div class="rightbar-overlay"></div>
+        <!-- /Right-bar -->
+
+
+        <!-- bundle -->
+        <script src="assets/js/vendor.min.js"></script>
+        <script src="assets/js/app.min.js"></script>
+
+        <!-- Apex js -->
+        <script src="assets/js/vendor/apexcharts.min.js"></script>
+
+        <!-- Todo js -->
+        <script src="assets/js/ui/component.todo.js"></script>
+
+        <!-- demo app -->
+        <script src="assets/js/pages/demo.dashboard-crm.js"></script>
+        <!-- end demo js-->
+        
+    </body>
+</html>
